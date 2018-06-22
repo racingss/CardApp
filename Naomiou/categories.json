@@ -1,0 +1,17 @@
+{
+	"category":[
+		{"name":"动物","iconimg":"tv.png"},
+		{"name":"交通","iconimg":"tv.png"},
+		{"name":"水果","iconimg":"tv.png"},
+		{"name":"自然","iconimg":"tv.png"},
+		{"name":"人物","iconimg":"tv.png"},
+		{"name":"家电","iconimg":"tv.png"},
+		{"name":"色彩","iconimg":"rainbow.png"},
+		{"name":"数字","iconimg":"number.png"}
+	],
+    "categorybyAge":[
+        {"name":"1~2岁","iconimg":""},
+        {"name":"2~3岁","iconimg":""},
+        {"name":"3~4岁","iconimg":""}
+    ]
+}
