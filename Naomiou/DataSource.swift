@@ -14,7 +14,7 @@ class DataSource {
     init() {
     }
     
-    var categories:Categories = Categories(category:[],categorybyAge:[])
+    var categories:Categories = Categories(category:[],categorybyAge:[],categorybyNewArrivals:[])
     
     func populateData() {
         categories = populateCategory()

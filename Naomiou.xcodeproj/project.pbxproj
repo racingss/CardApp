@@ -17,6 +17,8 @@
 		D79418FB20DC9AE500E36410 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79418FA20DC9AE400E36410 /* Categories.swift */; };
 		D79418FD20DC9DF600E36410 /* CategoryByAgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79418FC20DC9DF600E36410 /* CategoryByAgeCell.swift */; };
 		D79418FF20DCC4D700E36410 /* CategoryByAgeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79418FE20DCC4D700E36410 /* CategoryByAgeRow.swift */; };
+		D794190220E2076500E36410 /* CategoryByNewArrivalsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794190120E2076500E36410 /* CategoryByNewArrivalsRow.swift */; };
+		D794190420E207C900E36410 /* CategoryByNewArrivalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794190320E207C900E36410 /* CategoryByNewArrivalsCell.swift */; };
 		D7AF0DD420D38BA300687CD4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AF0DD320D38BA300687CD4 /* DataSource.swift */; };
 		D7FBEBCF20A2C11300DA2911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBEBCE20A2C11300DA2911 /* AppDelegate.swift */; };
 		D7FBEBD120A2C11300DA2911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBEBD020A2C11300DA2911 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 		D79418FA20DC9AE400E36410 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = Naomiou/Categories.swift; sourceTree = SOURCE_ROOT; };
 		D79418FC20DC9DF600E36410 /* CategoryByAgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryByAgeCell.swift; sourceTree = "<group>"; };
 		D79418FE20DCC4D700E36410 /* CategoryByAgeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryByAgeRow.swift; sourceTree = "<group>"; };
+		D794190120E2076500E36410 /* CategoryByNewArrivalsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryByNewArrivalsRow.swift; sourceTree = "<group>"; };
+		D794190320E207C900E36410 /* CategoryByNewArrivalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryByNewArrivalsCell.swift; sourceTree = "<group>"; };
 		D7AF0DD320D38BA300687CD4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Naomiou/DataSource.swift; sourceTree = SOURCE_ROOT; };
 		D7FBEBCB20A2C11300DA2911 /* Naomiou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naomiou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FBEBCE20A2C11300DA2911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D794190020E2072800E36410 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				D73C35A520D24CB900EC77C0 /* CategoryRow.swift */,
+				D79418FE20DCC4D700E36410 /* CategoryByAgeRow.swift */,
+				D794190120E2076500E36410 /* CategoryByNewArrivalsRow.swift */,
+				D79418F820D3A09000E36410 /* CategoryCell.swift */,
+				D79418FC20DC9DF600E36410 /* CategoryByAgeCell.swift */,
+				D794190320E207C900E36410 /* CategoryByNewArrivalsCell.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
 		D7AF0DD220D38AA800687CD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +108,7 @@
 			children = (
 				D7FBEBCE20A2C11300DA2911 /* AppDelegate.swift */,
 				D7FBEBD020A2C11300DA2911 /* ViewController.swift */,
-				D73C35A520D24CB900EC77C0 /* CategoryRow.swift */,
-				D79418FE20DCC4D700E36410 /* CategoryByAgeRow.swift */,
-				D79418F820D3A09000E36410 /* CategoryCell.swift */,
-				D79418FC20DC9DF600E36410 /* CategoryByAgeCell.swift */,
+				D794190020E2072800E36410 /* UIModel */,
 				D7FBEBD220A2C11300DA2911 /* Main.storyboard */,
 				D7AF0DD220D38AA800687CD4 /* Model */,
 				D7FBEBE520A2C3A400DA2911 /* Resources */,
@@ -194,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7AF0DD420D38BA300687CD4 /* DataSource.swift in Sources */,
+				D794190420E207C900E36410 /* CategoryByNewArrivalsCell.swift in Sources */,
 				D79418FB20DC9AE500E36410 /* Categories.swift in Sources */,
+				D794190220E2076500E36410 /* CategoryByNewArrivalsRow.swift in Sources */,
 				D79418F920D3A09000E36410 /* CategoryCell.swift in Sources */,
 				D7FBEBD120A2C11300DA2911 /* ViewController.swift in Sources */,
 				D7FBEBD720A2C11300DA2911 /* Naomiou.xcdatamodeld in Sources */,

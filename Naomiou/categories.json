@@ -13,5 +13,9 @@
         {"name":"1~2岁","iconimg":""},
         {"name":"2~3岁","iconimg":""},
         {"name":"3~4岁","iconimg":""}
+    ],
+    "categorybyNewArrivals":[
+        {"name":"1~2岁","iconimg":"tv.png"},
+        {"name":"2~3岁","iconimg":"tv.png"}
     ]
 }

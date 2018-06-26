@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    var categories = ["C1", "C2", "Science Fiction", "Kids", "Horror"]
+    var categories = ["C1", "C2", "最新上架", "最近阅读", "Horror"]
     let dataSource = DataSource()
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -26,14 +26,18 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if categories[indexPath.section] == "C1" {
+        if indexPath.section == 0 {
             let categoryRowCell = tableView.dequeueReusableCell(withIdentifier: "t1cell", for: indexPath) as! CategoryRow
             categoryRowCell.setMenu(menu: dataSource.populateCategory().getCategory())
             return categoryRowCell;
-        } else if categories[indexPath.section] == "C2" {
+        } else if indexPath.section == 1 {
             let categorybyAgeRowCell = tableView.dequeueReusableCell(withIdentifier: "t2cell", for: indexPath) as! CategoryByAgeRow
             categorybyAgeRowCell.setMenu(menu: dataSource.populateCategory().getCategorybyAge())
             return categorybyAgeRowCell;
+        } else if indexPath.section == 2 {
+            let categorybyNewArrivalsCell = tableView.dequeueReusableCell(withIdentifier: "t3cell", for: indexPath) as! CategoryByNewArrivalsRow
+            categorybyNewArrivalsCell.setMenu(menu: dataSource.populateCategory().getCategorybyNewArrivals())
+            return categorybyNewArrivalsCell;
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "t1cell", for: indexPath)
         return cell
@@ -52,7 +56,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+extension ViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 2 || indexPath.section == 3 {
+            return 160
+        } else {
+            return 50
+        }
+    }
+}
